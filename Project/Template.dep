@@ -8,44 +8,50 @@
     <outputs>
       <file>$PROJ_DIR$\..\Drive\led.c</file>
       <file>$PROJ_DIR$\..\App\main.c</file>
-      <file>$PROJ_DIR$\Debug\Obj\main.pbi</file>
-      <file>$PROJ_DIR$\Debug\Obj\Template.pbd</file>
-      <file>$PROJ_DIR$\Debug\Obj\led.r51</file>
-      <file>$PROJ_DIR$\Debug\Obj\led.pbi</file>
       <file>$TOOLKIT_DIR$\inc\ioCC2530.h</file>
-      <file>$PROJ_DIR$\Debug\Obj\main.r51</file>
+      <file>$PROJ_DIR$\Debug\Obj\Template.pbd</file>
       <file>$PROJ_DIR$\Debug\Exe\Template.d51</file>
+      <file>$PROJ_DIR$\Debug\Obj\main.r51</file>
       <file>$PROJ_DIR$\..\Drive\led.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\led.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\led.r51</file>
+      <file>$PROJ_DIR$\Debug\Obj\main.pbi</file>
     </outputs>
     <file>
       <name>$PROJ_DIR$\..\Drive\led.c</name>
       <outputs>
         <tool>
-          <name>BICOMP</name>
-          <file> 5</file>
-        </tool>
-        <tool>
           <name>ICC8051</name>
-          <file> 4</file>
+          <file> 8</file>
         </tool>
-      </outputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\..\App\main.c</name>
-      <outputs>
         <tool>
           <name>BICOMP</name>
-          <file> 2</file>
-        </tool>
-        <tool>
-          <name>ICC8051</name>
           <file> 7</file>
         </tool>
       </outputs>
       <inputs>
         <tool>
           <name>BICOMP</name>
-          <file> 6</file>
+          <file> 6 2</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\App\main.c</name>
+      <outputs>
+        <tool>
+          <name>ICC8051</name>
+          <file> 5</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 9</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 2</file>
         </tool>
       </inputs>
     </file>
@@ -54,7 +60,7 @@
       <inputs>
         <tool>
           <name>BILINK</name>
-          <file> 5 2</file>
+          <file> 7 9</file>
         </tool>
       </inputs>
     </file>
@@ -63,7 +69,7 @@
       <outputs>
         <tool>
           <name>XLINK</name>
-          <file> 8</file>
+          <file> 4</file>
         </tool>
       </outputs>
     </file>
