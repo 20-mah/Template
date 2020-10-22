@@ -6,35 +6,40 @@
   <configuration>
     <name>Debug</name>
     <outputs>
-      <file>$PROJ_DIR$\Debug\Obj\Template.pbd</file>
-      <file>$PROJ_DIR$\..\App\main.c</file>
-      <file>$PROJ_DIR$\Debug\Exe\Template.d51</file>
-      <file>$PROJ_DIR$\Debug\Obj\main.pbi</file>
-      <file>$PROJ_DIR$\Debug\Obj\main.r51</file>
       <file>$PROJ_DIR$\..\Drive\led.c</file>
-      <file>$TOOLKIT_DIR$\inc\ioCC2530.h</file>
-      <file>$PROJ_DIR$\Debug\Obj\led.pbi</file>
+      <file>$PROJ_DIR$\..\App\main.c</file>
+      <file>$PROJ_DIR$\Debug\Obj\main.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\Template.pbd</file>
       <file>$PROJ_DIR$\Debug\Obj\led.r51</file>
+      <file>$PROJ_DIR$\Debug\Obj\led.pbi</file>
+      <file>$TOOLKIT_DIR$\inc\ioCC2530.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\main.r51</file>
+      <file>$PROJ_DIR$\Debug\Exe\Template.d51</file>
+      <file>$PROJ_DIR$\..\Drive\led.h</file>
     </outputs>
     <file>
-      <name>$PROJ_DIR$\Debug\Obj\Template.pbd</name>
-      <inputs>
+      <name>$PROJ_DIR$\..\Drive\led.c</name>
+      <outputs>
         <tool>
-          <name>BILINK</name>
-          <file> 7 3</file>
+          <name>BICOMP</name>
+          <file> 5</file>
         </tool>
-      </inputs>
+        <tool>
+          <name>ICC8051</name>
+          <file> 4</file>
+        </tool>
+      </outputs>
     </file>
     <file>
       <name>$PROJ_DIR$\..\App\main.c</name>
       <outputs>
         <tool>
-          <name>ICC8051</name>
-          <file> 4</file>
+          <name>BICOMP</name>
+          <file> 2</file>
         </tool>
         <tool>
-          <name>BICOMP</name>
-          <file> 3</file>
+          <name>ICC8051</name>
+          <file> 7</file>
         </tool>
       </outputs>
       <inputs>
@@ -45,24 +50,20 @@
       </inputs>
     </file>
     <file>
+      <name>$PROJ_DIR$\Debug\Obj\Template.pbd</name>
+      <inputs>
+        <tool>
+          <name>BILINK</name>
+          <file> 5 2</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
       <name>[ROOT_NODE]</name>
       <outputs>
         <tool>
           <name>XLINK</name>
-          <file> 2</file>
-        </tool>
-      </outputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\..\Drive\led.c</name>
-      <outputs>
-        <tool>
-          <name>ICC8051</name>
           <file> 8</file>
-        </tool>
-        <tool>
-          <name>BICOMP</name>
-          <file> 7</file>
         </tool>
       </outputs>
     </file>
