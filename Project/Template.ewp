@@ -261,7 +261,7 @@
         <debug>1</debug>
         <option>
           <name>OutputFile</name>
-          <state></state>
+          <state>$FILE_BNAME$.r51</state>
         </option>
         <option>
           <name>CCDefines</name>
@@ -2066,9 +2066,15 @@
   </configuration>
   <group>
     <name>App</name>
+    <file>
+      <name>$PROJ_DIR$\..\App\main.c</name>
+    </file>
   </group>
   <group>
     <name>Drive</name>
+    <file>
+      <name>$PROJ_DIR$\..\Drive\led.c</name>
+    </file>
   </group>
 </project>
 
